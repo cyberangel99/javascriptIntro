@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<!-- 
+   New Perspectives on JavaScript, 2nd Edition
+   Tutorial 2
+   Case Problem 4
+
+   The Cutler Shopping Mall
+   Author: Mary Green
+   Date:  8/31/18
+
+   Filename:         mall.htm
+   Supporting files: clock.js, logo.jpg, mall.css, mall1.jpg, mall2.jpg, mall3.jpg, time.js
+-->
+	<link rel="stylesheet" href="mall.css">
+	<script src="time.js"></script>
+	<script>
+	function countDownClock() {
+		var currentDate = new Date();
+		var openingDate = new Date("March 23, 2019 9:00");
+		document.forms.mallclock.dayNow.value = showDate(currentDate);
+		document.forms.mallclock.timeNow.value = showTime(currentDate);
+		document.forms.mallclock.days.value = Math.floor(daysDiff(currentDate, openingDate));
+		document.forms.mallclock.hours.value = Math.floor(hoursDiff(currentDate, openingDate));
+		document.forms.mallclock.minutes.value = Math.floor(minutesDiff(currentDate, openingDate));
+	}
+</script>
+   <title>The Cutler Shopping Mall</title>
+</head>
+
+<body onload="setInterval(countDownClock(), 1000)">
+<!--html-->
+<div class="logo"><img src="logo.jpg" alt="logo"></div>&nbsp;
+<div class="nav"><nav><a href="mall.html">Home</a>&nbsp; <a href="storedirectory.html">Store Directory</a> &nbsp; <a href="giftideas.html">Gift Ideas</a> &nbsp; <a href="mallgiftcards.html">Mall Gift Cards</a> &nbsp;</b>
+<a href="specialevents.html">Special Events</a>&nbsp; <a href="jobs.html">Jobs</a>&nbsp; <a href="security.html">Security</a>&nbsp; <a href="leasing.html">Leasing</a>&nbsp; 
+<a href="sponsorships.html">Sponsorships</a>&nbsp; <a href="contactus.html">Contact Us</a>&nbsp; 
+</nav></div>&nbsp;
+
+
+<div class="form">
+	<form method="post" name="mallclock">
+		Today's date:<input type="text" name="dayNow"><br>
+		Current time:<input type="text" name="timeNow"><br>
+		Days until open:<input type="text" name="days"><br>
+		Hours left until open:<input type="text" name="hours"><br>
+		Minutes left until open:<input type="text" name="minutes"><br>
+	</form>
+</div>
+&nbsp;
+&nbsp;
+
+<div class="mall1"><img src="mall1.jpg" alt="mall 1" ></div>
+<div class="intro">
+	<p>Opening Soon!<br>
+	=============<br>
+	The Cutler Shopping Mall is planning a GRAND grand opening with great sales,
+	contests, family fun events, and more surprises. Plan to join us on March 23rd
+	at 9am for this special event!
+	</p>
+</div>
+
+<div class="mall2"><img src="mall2.jpg" alt="mall 2"></div>
+<div class="intro">
+	<p>About the Mall<br>
+	==============<br>
+	Cutler Mall is home to your favorite stores like Boston Store, JCPenney, 
+	and Sears. We feature more than 110 specialty stores including Aveda, 
+	Williams-Sonoma, Banana Republic, Express, Ann Taylor, Abercrombie & Fitch, 
+	and American Eagle Outfitters. New specialty stores include Pottery Barn, 
+	Coldwater Creek, Hollister Co., Abercrombie, Aeropostale, Weathervane, 
+	Helzberg Diamonds, and Godiva Chocolatier.
+	</p>
+</div>
+
+<div class="mall3"><img src="mall3.jpg" alt="mall 3" ></div>
+<div class="intro">
+	<p>The Mall has 24 delicious eateries, a family playground, Internet Kiosk, and
+	baby-sitting facilities; making a visit to the Cutler Mall a true shopping experience.
+	</p>
+</div>
+&nbsp;
+&nbsp;
+<div>
+	<div>
+		<p>Address</p>
+		<p>=======</p>
+		<p>The Cutler Mall</p>
+		<p>20050 Enterprise Avenue</p>
+		<p>Cutler, IA 43109</p>
+		<p>(281) 555-9081</p>
+	</div>
+&nbsp;
+&nbsp;
+	<div>
+		<p>Mall Hours</p>
+		<p>==========</p>
+		<p>Monday - Saturday: 10am - 9pm</p>
+		<p>Sunday: 11am - 6pm</p>
+	</div>
+</div>
+</body>
+</html>

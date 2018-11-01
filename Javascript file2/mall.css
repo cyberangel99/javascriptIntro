@@ -1,0 +1,41 @@
+
+body{
+	background-color: #d9f9ef;
+}
+
+.logo{
+	padding-left:535px;
+	background-color:gray;
+	
+}
+
+.nav{
+	text-align: center;
+	padding-bottom:40px;
+}
+.form{
+	padding-left: 508px;	
+}
+.form input{
+	margin-bottom:10px;
+}
+.mall1{
+	border-style:solid;
+	border-color: grey;
+	border-width: 10px;
+	width:21.9%;
+}
+
+.mall2{
+	border-style:solid;
+	border-color: grey;
+	border-width: 10px;
+	width:25.3%;
+}
+
+.mall3{
+	border-style:solid;
+	border-color: grey;
+	border-width: 10px;
+	width:13.6%;
+}

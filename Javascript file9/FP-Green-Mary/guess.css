@@ -1,0 +1,66 @@
+.table {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10%;
+	display: block;
+	width: 100%;
+}
+
+table {
+	background-color: #477747;
+	max-width: 650px;
+	margin: 0 auto;
+}
+
+table, th, td {
+	border-style: inset;
+}
+
+.number {
+	font-weight: bold;
+	text-align: center;
+	font-size: 2em;
+}
+
+.button {
+	background-color: #55dd55;
+	border-style: outset;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.logo {
+	background-color: white;
+	width: 20%;
+}
+
+.from {
+	text-align: center;
+}
+
+.messageBox {
+	margin: 0;
+	padding: 5px;
+}
+
+.messageBox2 {
+	margin: 0;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.button2 {
+	background-color: #55dd55;
+	border-style: outset;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-bottom: 10px;
+}
+
+#messageBox, #msgbox {
+	color: red;
+	margin: 0 auto;
+	display: block;
+}

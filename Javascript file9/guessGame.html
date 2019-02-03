@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+	<title>Guess my Number Guessing Game</title>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Guess my number Guessing Game">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="guess.css" />
+	<script src="cookie.js"></script>
+	<script src="game.js"></script>
+
+	<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+</head>
+
+<body>
+	<div class="table">
+		<form id="guessForm">
+			<table style="width:100%">
+				<tr>
+					<td rowspan="8" class="logo"><img src="gamelogo.jpg" alt="gamelogo"></td>
+				</tr>
+				<tr>
+					<td colspan="4" class="number">Number Range</td>
+					<td rowspan="2"><button type="button" class="button" id="start">Start</button>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="1">
+						<p class="from">From:<br /><input type="text" name="from" id="from" maxlength="4" size="4"></p>
+					</td>
+					<td colspan="2">
+						<p class="from">To:<br /><input type="text" name="to" id="to" maxlength="4" size="4"></p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="5">
+						<p class="messageBox"><input type="text" id="messageBox" name="messageBox" maxlength="70" size="70" value="Please set range of numbers and press the Start button."></p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="5">
+						<p class="messageBox2"><input type="text" name="guess" id="guess" maxlength="4" size="4"></p><br /><button type="button" id="guessBtn" class="button2">Guess</button></td>
+
+				</tr>
+				<tr>
+					<td colspan="5">
+						<p class="messageBox"><input type="text" id="msgbox" name="msgbox" maxlength="70" size="70"></p>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+
+</html>
